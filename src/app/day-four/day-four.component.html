@@ -1,0 +1,7 @@
+
+<div class="ang-event">
+  <h1 [innerText]="title"></h1>
+  <p>Value on umber on click event <span>{{nums}}</span></p>
+  <button class="btn-inc" (click)="Increment()" [disabled]="incDisabled">Increment ++</button>
+  <button class="btn-dec" (click)="Decrement()" [disabled]="decDisabled">Decreament --</button>
+</div>

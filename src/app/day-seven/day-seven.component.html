@@ -1,0 +1,23 @@
+<h2>NgIf with age less than 30</h2>
+
+<ul *ngFor="let perData of people">
+  <li *ngIf = "perData.age < 30">{{perData.name}} ({{perData.age}})</li>
+</ul>
+<hr>
+
+<h2>NgIf with Color</h2>
+<ul *ngFor="let perData of people">
+  <li *ngIf="perData.country == 'UK'" [ngStyle]="{'color': 'green'}">{{perData.name}} ({{perData.country}})</li>
+  <li *ngIf="perData.country == 'USA'" [ngStyle]="{'color': 'blue'}">{{perData.name}} ({{perData.country}})</li>
+  <li *ngIf="perData.country == 'HK'" [ngStyle]="{'color': 'red'}">{{perData.name}} ({{perData.country}})</li>
+  <li *ngIf="perData.country !== 'USA' && perData.country !== 'UK' && perData.country !== 'HK'" [ngStyle]="{'color': 'yellow'}">{{perData.name}} ({{perData.country}})</li>
+</ul>
+<hr>
+
+<h2>NgSwitch with Color</h2>
+<ul *ngFor="let perData of people" [ngSwitch]="perData.country">
+  <li *ngSwitchCase="'UK'" [ngStyle]="{'color': 'green'}">{{perData.name}} ({{perData.country}})</li>
+  <li  *ngSwitchCase="'USA'" [ngStyle]="{'color': 'blue'}">{{perData.name}} ({{perData.country}})</li>
+  <li  *ngSwitchCase="'HK'" [ngStyle]="{'color': 'red'}">{{perData.name}} ({{perData.country}})</li>
+  <li  *ngSwitchDefault [ngStyle]="{'color': 'yellow'}">{{perData.name}} ({{perData.country}})</li>
+</ul>

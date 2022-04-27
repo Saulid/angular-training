@@ -1,0 +1,35 @@
+.ang-event {
+  border: 1px solid #630363;
+  font-family: sans-serif;
+  padding: 2% 2%;
+  width: 24%;
+  margin: 0 auto;
+
+  h1 {
+    font-weight: 4;
+  }
+  span {
+    margin-left: 4%;
+    font-size: 3.2em;
+  }
+  button {
+    margin-top: 8%;
+    margin-right: 4%;
+    padding: 4% 2%;
+    font-size: 1em;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn-inc {
+    background-color: #4ea149;
+  }
+  .btn-dec {
+    background-color: #d42a29;
+  }
+  [disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+}

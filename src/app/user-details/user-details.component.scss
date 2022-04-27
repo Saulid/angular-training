@@ -1,0 +1,40 @@
+.user-info{
+  font-family: sans-serif;
+  width: 40%;
+  margin: 0 auto;
+  button:hover{
+    color: #434343;
+    cursor: pointer;
+  }
+  button:active {
+    background-color: #f2f2f2;
+  }
+  .title{
+    text-align: center;
+  }
+  .btn-add-user{
+    color: #fff;
+    background-color: #dc3545;
+    border: 0;
+    padding: 8px 10px 8px 10px;
+    border-radius: 4px;
+  }
+  .btn-delete,
+  .btn-edit{
+    color: #fff;
+    background-color: #4fa746;
+    border: 0;
+    padding: 10px 12px 10px 12px;
+    border-radius: 4px;
+  }
+  table{
+    border-spacing: 0;
+  }
+  table > tr:nth-child(2n){
+    background-color: #f2f2f2;
+  }
+  th, td{
+    padding: 10px 12px 10px 12px;
+    text-align: center;
+  }
+}

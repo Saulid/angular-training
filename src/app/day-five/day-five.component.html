@@ -1,0 +1,16 @@
+<div class="day-five">
+  <table>
+    <tr>
+      <th [attr.colspan]="colspanVal">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr *ngFor = "let user of users">
+      <th [attr.colspan]="colspanVal">{{user.name}}</th>
+      <th>{{user.age}}</th>
+    </tr>
+  </table>
+  <hr>
+  <p [class.error]="isTrue">Test Error</p>
+  <hr>
+  <p>User name is <span [style]="styles">Jack</span></p>
+</div>
