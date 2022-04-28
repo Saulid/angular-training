@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./day-seven.component.scss']
 })
 export class DaySevenComponent implements OnInit {
-  title = 'hol-day-seven';
+
   constructor() { }
   
   name: string = '';

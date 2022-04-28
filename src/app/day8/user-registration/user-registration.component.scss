@@ -1,0 +1,64 @@
+* {
+  font-family: sans-serif;
+}
+
+.reg {
+  background-image: linear-gradient(45deg, #3a6186, #89253e);
+  color: #ffffff;
+  width: 40%;
+  padding: 1% 0;
+  border-radius: 5px;
+  margin: 0 auto;
+
+  h1 {
+    font-weight: 6;
+    text-align: center;
+    margin-bottom: 8%;
+  }
+
+  .username,
+  .email,
+  .phNumber,
+  .addr,
+  .desc {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #input-forms,
+  textarea {
+    border-radius: 6px;
+    border: transparent;
+  }
+
+  #input-forms {
+    padding: 4% 4%;
+    margin: 4% 0;
+    width: 92%;
+  }
+
+  textarea {
+    padding: 5% 3.4%;
+    margin: 4% 0;
+    width: 93%;
+  }
+
+  button {
+    width: 20%;
+    margin-top: 4%;
+    margin-left: 20%;
+    padding: 2% 5%;
+    border-radius: 5px;
+    border: transparent;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  button:active {
+    opacity: 0.5;
+  }
+
+  .btn-create {
+    background-color: #74b8f7;
+  }
+}

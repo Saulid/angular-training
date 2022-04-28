@@ -1,0 +1,30 @@
+<div class="reg">
+  <h1>Register Here</h1>
+
+  <div class="username">
+    <label for="username">Username</label> <br>
+    <input [(ngModel)]='username' id="input-forms">
+  </div>
+
+  <div class="email">
+    <label for="emal">E-mail</label> <br>
+    <input [(ngModel)]='email' id="input-forms">
+  </div>
+
+  <div class="phNumber">
+    <label for="phNumber">phNumber</label> <br>
+    <input type="number" [(ngModel)]='phNumber' id="input-forms">
+  </div>
+
+  <div class="addr">
+    <label for="address">Address</label> <br>
+    <textarea name="address" [(ngModel)]='address'></textarea>
+  </div>
+
+  <div class="desc">
+    <label for="description">Description</label> <br>
+    <textarea name="description" [(ngModel)]='description'></textarea>
+  </div>
+
+  <button (click)="createUser()" class="btn-create">Create</button>
+</div>
