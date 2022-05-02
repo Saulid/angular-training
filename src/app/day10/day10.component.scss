@@ -1,0 +1,27 @@
+* {
+  font-family: sans-serif;
+}
+.clearfix {
+  clear: both;
+}
+form {
+  float: left;
+  margin-left: 20%;
+}
+.gender {
+  margin: 10% 0;
+}
+mat-radio-button {
+  margin-right: 10%;
+}
+
+table {
+  width: 45%;
+  background-color: #74b8f7;
+  border-radius: 5px;
+  border: transparent;
+  text-align: center;
+  float: right;
+  margin-top: 2%;
+  margin-right: 10%;
+}

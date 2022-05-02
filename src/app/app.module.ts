@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,10 @@ import { DaySixComponent } from './day-six/day-six.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserRegistrationComponent } from './day8/user-registration/user-registration.component';
 import { UserListComponent } from './day8/user-list/user-list.component';
+import { Day10Component } from './day10/day10.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgMaterialModule } from './ng-material/ng-material.module';
+
 
 @NgModule({
   declarations: [
@@ -21,13 +25,17 @@ import { UserListComponent } from './day8/user-list/user-list.component';
     DaySevenComponent,
     UserDetailsComponent,
     UserRegistrationComponent,
-    UserListComponent
+    UserListComponent,
+    Day10Component,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-
+    BrowserAnimationsModule,
+    NgMaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,6 +8,8 @@ import { DaySixComponent } from './day-six/day-six.component';
 import { DaySevenComponent } from './day-seven/day-seven.component';
 import { UserRegistrationComponent } from './day8/user-registration/user-registration.component';
 import { UserListComponent } from './day8/user-list/user-list.component';
+import { Day10Component } from './day10/day10.component';
+
 
 
 const routes: Routes = [
@@ -38,6 +40,10 @@ const routes: Routes = [
   {
     path: 'user-list',
     component: UserListComponent
+  },
+  {
+    path: 'day10',
+    component: Day10Component
   }
 ];
 
