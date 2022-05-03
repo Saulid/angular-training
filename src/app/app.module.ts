@@ -14,6 +14,8 @@ import { UserListComponent } from './day8/user-list/user-list.component';
 import { Day10Component } from './day10/day10.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgMaterialModule } from './ng-material/ng-material.module';
+import { RegisterComponent } from './day11/member/register/register.component';
+
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
     UserRegistrationComponent,
     UserListComponent,
     Day10Component,
+    RegisterComponent,
 
   ],
   imports: [
