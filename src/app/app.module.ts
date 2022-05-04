@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgMaterialModule } from './ng-material/ng-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,9 +14,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserRegistrationComponent } from './day8/user-registration/user-registration.component';
 import { UserListComponent } from './day8/user-list/user-list.component';
 import { Day10Component } from './day10/day10.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgMaterialModule } from './ng-material/ng-material.module';
-import { RegisterComponent } from './day11/member/register/register.component';
+import { AssignmentDay11Component } from './assignment-day11/assignment-day11.component';
+import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
 
 
 
@@ -29,7 +30,8 @@ import { RegisterComponent } from './day11/member/register/register.component';
     UserRegistrationComponent,
     UserListComponent,
     Day10Component,
-    RegisterComponent,
+    AssignmentDay11Component,
+    AssignmentDay12Component,
 
   ],
   imports: [

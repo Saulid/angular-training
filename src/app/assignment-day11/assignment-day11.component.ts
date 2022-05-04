@@ -1,16 +1,13 @@
-import { Component, OnInit, ViewChild } from '@angular/core'; 
+import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-export interface Position {
-  id: string;
-  value: string;
-}
+
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  selector: 'app-assignment-day11',
+  templateUrl: './assignment-day11.component.html',
+  styleUrls: ['./assignment-day11.component.scss']
 })
-export class RegisterComponent implements OnInit {
-  
+export class AssignmentDay11Component implements OnInit {
+
   date = new FormControl(new Date()); 
   formData: any = { 
     name: '', 

@@ -1,10 +1,17 @@
+
 <div class="clearfix">
   <div class="container">
     <h1>Membership Form</h1>
     <form #myForm="ngForm" (ngSubmit)="saveData()">
       <mat-form-field appearance="standard" class="form-group">
-        <mat-label>Name*</mat-label>
-        <input matInput [(ngModel)]="formData.name" name="name" placeholder="Name">
+        <mat-label>First Name</mat-label>
+        <input matInput [(ngModel)]="formData.fname" name="fname" placeholder="First Name">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field appearance="standard" class="form-group">
+        <mat-label>Last Name</mat-label>
+        <input matInput [(ngModel)]="formData.lname" name="lname" placeholder="Last Name" required="fadfas">
       </mat-form-field>
       <br>
   
@@ -13,14 +20,6 @@
         <input matInput type="email" [(ngModel)]="formData.email" name="email" placeholder="Email">
       </mat-form-field>
       <br>
-  
-      <mat-form-field appearance="fill" class="form-group">
-        <mat-label>Membership Date</mat-label>
-        <input matInput [matDatepicker]="picker" [(ngModel)]="formData.mbdate" name="mbdate">
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
   
       <div class="submit-btn">
         <button mat-flat-button color="primary" type="submit">Submit</button>
@@ -37,16 +36,16 @@
       <table>
           <tr>
             <th>#ID</th>
-            <th>Name</th>
+            <th>First Name</th>
+            <th>Last Name</th>
             <th>Email</th>
-            <th>Date</th>
             <th>Action</th>
           </tr>
           <tr *ngFor="let data of userData; let id = index;">
-            <td>{{id}}</td>
-            <td>{{data.name}}</td>
+            <td>{{id + 1}}</td>
+            <td>{{data.fname}}</td>
+            <td>{{data.lname}}</td>
             <td>{{data.email}}</td>
-            <td>{{data.mbdate | date: 'dd/MM/yyyy'}}</td>
             <td (click)="removeData(id)"><button mat-flat-button color="warn">Delete</button> </td>
           </tr>
       </table>
