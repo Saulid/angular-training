@@ -1,0 +1,19 @@
+.container {
+  h1 {
+    margin-top: 2%;
+    text-align: center;
+  }
+
+  form {
+    width: 50%;
+    margin: 0 auto;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    .submit-btn {
+      margin: 6% 0;
+    }
+  }
+}
