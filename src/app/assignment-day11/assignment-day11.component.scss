@@ -1,0 +1,49 @@
+* {
+  font-family: sans-serif;
+}
+.container {
+  width: 40%;
+  margin: 0 auto;
+
+  h1 {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .form-group {
+    display: block;
+  }
+  .submit-btn {
+    margin-top: 20px;
+  }
+}
+
+.table {
+  margin-top: 2%;
+  h1 {
+    text-align: center;
+  }
+
+  .usrlist {
+    text-align: center;
+  }
+
+  table {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+      tr {
+        th {
+          padding: 10px 0;
+        }
+      }
+      tr {
+        td {
+          padding-left: 10px;
+        }
+        td:last-child {
+          text-align: center;
+        }
+      }
+
+  }
+}
