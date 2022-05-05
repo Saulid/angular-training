@@ -32,7 +32,6 @@ import { AssignmentDay12Component } from './assignment-day12/assignment-day12.co
     Day10Component,
     AssignmentDay11Component,
     AssignmentDay12Component,
-
   ],
   imports: [
     BrowserModule,

@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'user-list', component: UserListComponent },
   { path: 'day10', component: Day10Component },
   { path: 'member/register', component: AssignmentDay11Component },
-  { path: 'day12', component: AssignmentDay12Component }
+  { path: 'day12', component:AssignmentDay12Component }
 
 ];
 
