@@ -17,6 +17,7 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
 import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
 
 import { UserService } from './services/user.service';
+import { AssignmentDay11Component } from './assignment-day11/assignment-day11.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { UserService } from './services/user.service';
     UserListComponent,
     Day10Component,
     AssignmentDay12Component,
+    AssignmentDay11Component
   ],
   imports: [
     BrowserModule,
