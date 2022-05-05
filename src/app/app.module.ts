@@ -17,8 +17,6 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
 import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
 
 import { UserService } from './services/user.service';
-
-
 @NgModule({
   declarations: [
     AppComponent,
