@@ -14,8 +14,9 @@ import { UserListComponent } from './day8/user-list/user-list.component';
 import { Day10Component } from './day10/day10.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgMaterialModule } from './ng-material/ng-material.module';
+import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
 
-
+import { UserService } from './services/user.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,7 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
     UserRegistrationComponent,
     UserListComponent,
     Day10Component,
-
+    AssignmentDay12Component,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +38,9 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
     NgMaterialModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    UserService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
