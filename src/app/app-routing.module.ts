@@ -11,6 +11,7 @@ import { UserListComponent } from './day8/user-list/user-list.component';
 import { Day10Component } from './day10/day10.component';
 import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
 import { AssignmentDay11Component } from './assignment-day11/assignment-day11.component';
+import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
 
 
 
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'user-list', component: UserListComponent },
   { path: 'day10', component: Day10Component },
   { path: 'member/register', component: AssignmentDay11Component},
-  { path: 'day12', component: AssignmentDay12Component }
+  { path: 'day12', component: AssignmentDay12Component },
+  { path: 'day14', component: AssignmentDay14Component},
 ];
 
 @NgModule({

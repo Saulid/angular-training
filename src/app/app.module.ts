@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+
+
+// pages
 import { AppComponent } from './app.component';
 import { DayFiveComponent } from './day-five/day-five.component';
 import { DayFourComponent } from './day-four/day-four.component';
@@ -15,9 +17,12 @@ import { Day10Component } from './day10/day10.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgMaterialModule } from './ng-material/ng-material.module';
 import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
-
-import { UserService } from './services/user.service';
 import { AssignmentDay11Component } from './assignment-day11/assignment-day11.component';
+import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
+
+import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
+import { UserService } from './services/user.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +35,8 @@ import { AssignmentDay11Component } from './assignment-day11/assignment-day11.co
     UserListComponent,
     Day10Component,
     AssignmentDay12Component,
-    AssignmentDay11Component
+    AssignmentDay11Component,
+    AssignmentDay14Component,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,7 @@ import { AssignmentDay11Component } from './assignment-day11/assignment-day11.co
     ReactiveFormsModule,
   ],
   providers: [
-    UserService,
+    UserService, ErrorStateMatcher,
   ],
   bootstrap: [AppComponent]
 })
