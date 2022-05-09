@@ -20,7 +20,6 @@ import { AssignmentDay12Component } from './assignment-day12/assignment-day12.co
 import { AssignmentDay11Component } from './assignment-day11/assignment-day11.component';
 import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
 
-import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import { UserService } from './services/user.service';
 
 @NgModule({
@@ -47,7 +46,7 @@ import { UserService } from './services/user.service';
     ReactiveFormsModule,
   ],
   providers: [
-    UserService, ErrorStateMatcher,
+    UserService,
   ],
   bootstrap: [AppComponent]
 })
