@@ -14,8 +14,6 @@ import { AssignmentDay11Component } from './assignment-day11/assignment-day11.co
 import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
 import { AssignmentDay15Component } from './assignment-day15/assignment-day15.component';
 
-
-
 const routes: Routes = [
   { path: 'user-details', component: UserDetailsComponent },
   { path: 'day-four', component: DayFourComponent },
