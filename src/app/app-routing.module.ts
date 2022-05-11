@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { UserDetailsComponent } from './user-details/user-details.component';
@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'day12', component: AssignmentDay12Component },
   { path: 'day14', component: AssignmentDay14Component },
   { path: 'day15', component: AssignmentDay15Component },
-  { path: 'day16', component: AssignmentDay16Component },
+  { path: 'day16', component: AssignmentDay16Component}
 ];
 
 @NgModule({

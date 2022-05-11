@@ -38,7 +38,7 @@ import { AssignmentDay16Component } from './assignment-day16/assignment-day16.co
     AssignmentDay11Component,
     AssignmentDay14Component,
     AssignmentDay15Component,
-    AssignmentDay16Component,
+    AssignmentDay16Component
   ],
   imports: [
     BrowserModule,

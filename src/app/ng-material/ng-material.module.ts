@@ -7,10 +7,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
-import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSnackBarModule } from '@angular/material/snack-bar'; 
+import { MatSelectModule } from '@angular/material/select';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
     declarations: [],
@@ -23,11 +23,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatDatepickerModule,
         MatNativeDateModule,
         MatIconModule,
-        MatSelectModule,
         MatRadioModule,
         MatButtonModule,
-        MatFormFieldModule, 
-        MatSnackBarModule,
+        MatSelectModule,
+        MatPaginatorModule,
     ],
     exports: [
         CommonModule,
@@ -38,10 +37,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatDatepickerModule,
         MatNativeDateModule,
         MatIconModule,
-        MatSelectModule,
         MatRadioModule,
         MatButtonModule,
-        MatSnackBarModule 
+        MatSelectModule,
+        MatPaginatorModule,
     ]
 })
-export class NgMaterialModule { }
+export class NgMaterialModule { 
+  
+}
