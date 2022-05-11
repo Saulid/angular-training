@@ -19,10 +19,11 @@ import { NgMaterialModule } from './ng-material/ng-material.module';
 import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
 import { AssignmentDay11Component } from './assignment-day11/assignment-day11.component';
 import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
-
-import { UserService } from './services/user.service';
 import { AssignmentDay15Component } from './assignment-day15/assignment-day15.component';
 import { AssignmentDay16Component } from './assignment-day16/assignment-day16.component';
+
+import { UserService } from './services/user.service';
+
 @NgModule({
   declarations: [
     AppComponent,
