@@ -14,6 +14,7 @@ import { AssignmentDay11Component } from './assignment-day11/assignment-day11.co
 import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
 import { AssignmentDay15Component } from './assignment-day15/assignment-day15.component';
 import { AssignmentDay16Component } from './assignment-day16/assignment-day16.component';
+import { AssignmentDay18Component } from './assignment-day18/assignment-day18.component';
 
 const routes: Routes = [
   { path: 'user-details', component: UserDetailsComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'day12', component: AssignmentDay12Component },
   { path: 'day14', component: AssignmentDay14Component },
   { path: 'day15', component: AssignmentDay15Component },
-  { path: 'day16', component: AssignmentDay16Component}
+  { path: 'day16', component: AssignmentDay16Component },
+  { path: 'day18', component: AssignmentDay18Component },
 ];
 
 @NgModule({

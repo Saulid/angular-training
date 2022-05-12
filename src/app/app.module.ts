@@ -23,6 +23,7 @@ import { AssignmentDay15Component } from './assignment-day15/assignment-day15.co
 import { AssignmentDay16Component } from './assignment-day16/assignment-day16.component';
 
 import { UserService } from './services/user.service';
+import { AssignmentDay18Component } from './assignment-day18/assignment-day18.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UserService } from './services/user.service';
     AssignmentDay11Component,
     AssignmentDay14Component,
     AssignmentDay15Component,
-    AssignmentDay16Component
+    AssignmentDay16Component,
+    AssignmentDay18Component
   ],
   imports: [
     BrowserModule,
