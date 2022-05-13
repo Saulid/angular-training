@@ -21,9 +21,12 @@ import { AssignmentDay11Component } from './assignment-day11/assignment-day11.co
 import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
 import { AssignmentDay15Component } from './assignment-day15/assignment-day15.component';
 import { AssignmentDay16Component } from './assignment-day16/assignment-day16.component';
+import { AssignmentDay18Component } from './assignment-day18/assignment-day18.component';
+import { AssignmentDay19Component } from './assignment-day19/assignment-day19.component';
 
 import { UserService } from './services/user.service';
-import { AssignmentDay18Component } from './assignment-day18/assignment-day18.component';
+import { CustompipePipe } from './pipes/custompipe.pipe';
+import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { AssignmentDay18Component } from './assignment-day18/assignment-day18.co
     AssignmentDay14Component,
     AssignmentDay15Component,
     AssignmentDay16Component,
-    AssignmentDay18Component
+    AssignmentDay18Component,
+    AssignmentDay19Component,
+    CustompipePipe,
+    Custompipe1Pipe
   ],
   imports: [
     BrowserModule,
@@ -53,6 +59,8 @@ import { AssignmentDay18Component } from './assignment-day18/assignment-day18.co
   ],
   providers: [
     UserService,
+    CustompipePipe,
+    Custompipe1Pipe
   ],
   bootstrap: [AppComponent]
 })
