@@ -20,6 +20,8 @@ import { AssignmentDay20Component } from './assignment-day20/assignment-day20.co
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'day12', pathMatch: 'full' },
+
   { path: 'user-details', component: UserDetailsComponent },
   { path: 'day-four', component: DayFourComponent },
   { path: 'day-five', component: DayFiveComponent },
@@ -35,7 +37,6 @@ const routes: Routes = [
   { path: 'day16', component: AssignmentDay16Component },
   { path: 'day18', component: AssignmentDay18Component },
   { path: 'day19', component: AssignmentDay19Component},
-  { path: '', component: AssignmentDay20Component },
   { path: 'day20', component: AssignmentDay20Component},
   { path: '**', component: PageNotFoundComponent }
 ];
