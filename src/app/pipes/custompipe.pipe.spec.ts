@@ -1,4 +1,3 @@
-
 import { CustompipePipe } from './custompipe.pipe';
 
 describe('CustompipePipe', () => {
