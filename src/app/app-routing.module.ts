@@ -35,7 +35,8 @@ const routes: Routes = [
   { path: 'day16', component: AssignmentDay16Component },
   { path: 'day18', component: AssignmentDay18Component },
   { path: 'day19', component: AssignmentDay19Component},
-  { path: 'day20', component: AssignmentDay20Component },
+  { path: '', component: AssignmentDay20Component },
+  { path: 'day20', component: AssignmentDay20Component},
   { path: '**', component: PageNotFoundComponent }
 ];
 
