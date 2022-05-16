@@ -3,6 +3,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
+//services
+import { UserService } from './services/user.service';
+
+//pipe
+import { CustompipePipe } from './pipes/custompipe.pipe';
+import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
 
 // pages
 import { AppComponent } from './app.component';
@@ -23,10 +29,11 @@ import { AssignmentDay15Component } from './assignment-day15/assignment-day15.co
 import { AssignmentDay16Component } from './assignment-day16/assignment-day16.component';
 import { AssignmentDay18Component } from './assignment-day18/assignment-day18.component';
 import { AssignmentDay19Component } from './assignment-day19/assignment-day19.component';
+import { AssignmentDay20Component } from './assignment-day20/assignment-day20.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { UserService } from './services/user.service';
-import { CustompipePipe } from './pipes/custompipe.pipe';
-import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
+
+
 
 @NgModule({
   declarations: [
@@ -47,7 +54,9 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
     AssignmentDay18Component,
     AssignmentDay19Component,
     CustompipePipe,
-    Custompipe1Pipe
+    Custompipe1Pipe,
+    AssignmentDay20Component,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
