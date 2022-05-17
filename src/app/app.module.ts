@@ -32,9 +32,6 @@ import { AssignmentDay19Component } from './assignment-day19/assignment-day19.co
 import { AssignmentDay20Component } from './assignment-day20/assignment-day20.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
