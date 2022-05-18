@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+//guards
+import { UserGuard } from './guards/user.guard';
+
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { DayFourComponent } from './day-four/day-four.component';
 import { DayFiveComponent } from './day-five/day-five.component';
@@ -17,7 +20,8 @@ import { AssignmentDay16Component } from './assignment-day16/assignment-day16.co
 import { AssignmentDay18Component } from './assignment-day18/assignment-day18.component';
 import { AssignmentDay19Component } from './assignment-day19/assignment-day19.component';
 import { AssignmentDay20Component } from './assignment-day20/assignment-day20.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AssignmentDay22Component } from './assignment-day22/assignment-day22.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'day12', pathMatch: 'full' },
@@ -37,7 +41,7 @@ const routes: Routes = [
   { path: 'day18', component: AssignmentDay18Component },
   { path: 'day19', component: AssignmentDay19Component},
   { path: 'day20', component: AssignmentDay20Component},
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'day22/:id', component: AssignmentDay22Component, canActivate: [UserGuard] },
 ];
 
 @NgModule({

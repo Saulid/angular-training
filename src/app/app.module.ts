@@ -31,6 +31,7 @@ import { AssignmentDay18Component } from './assignment-day18/assignment-day18.co
 import { AssignmentDay19Component } from './assignment-day19/assignment-day19.component';
 import { AssignmentDay20Component } from './assignment-day20/assignment-day20.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AssignmentDay22Component } from './assignment-day22/assignment-day22.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CustompipePipe,
     Custompipe1Pipe,
     AssignmentDay20Component,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AssignmentDay22Component
   ],
   imports: [
     BrowserModule,
