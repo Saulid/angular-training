@@ -21,7 +21,9 @@ import { AssignmentDay18Component } from './assignment-day18/assignment-day18.co
 import { AssignmentDay19Component } from './assignment-day19/assignment-day19.component';
 import { AssignmentDay20Component } from './assignment-day20/assignment-day20.component';
 import { AssignmentDay22Component } from './assignment-day22/assignment-day22.component';
+import { AssignmentDay23Component } from './assignment-day23/assignment-day23.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 
 const routes: Routes = [
@@ -35,15 +37,17 @@ const routes: Routes = [
   { path: 'user-list', component: UserListComponent },
   { path: 'day10', component: Day10Component },
   { path: 'member/register', component: AssignmentDay11Component},
-  { path: 'day12', component: AssignmentDay12Component },
-  { path: 'day14', component: AssignmentDay14Component },
+  { path: 'day12', component: AssignmentDay12Component, canActivate: [UserGuard] },
+  { path: 'day14', component: AssignmentDay14Component, canActivate: [UserGuard] },
   { path: 'day15', component: AssignmentDay15Component },
   { path: 'day16', component: AssignmentDay16Component },
   { path: 'day18', component: AssignmentDay18Component },
-  { path: 'day19', component: AssignmentDay19Component},
-  { path: 'day20', component: AssignmentDay20Component},
+  { path: 'day19', component: AssignmentDay19Component },
+  { path: 'day20', component: AssignmentDay20Component, canActivate: [UserGuard] },
   { path: 'day22/:id', component: AssignmentDay22Component, canActivate: [UserGuard] },
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'login', component: AssignmentDay23Component },
+  { path: '**', component: PageNotFoundComponent },
+
 ];
 
 @NgModule({
