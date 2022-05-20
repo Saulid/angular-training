@@ -20,6 +20,9 @@ export class UserService {
   }
 }
 
+@Injectable({
+  providedIn: 'root'
+})
 export class UserLoginSys {
   loginEmail = localStorage.getItem('email');
   loginPassword = localStorage.getItem('password');
