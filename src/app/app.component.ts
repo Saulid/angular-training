@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AngularTraining';
   opened = false;
+
+  showNavBar = true;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (this.router.url === '/login') {
+        this.showNavBar = false;
+      } else {
+        this.showNavBar = true;
+      }
+    })
+  }
 }
