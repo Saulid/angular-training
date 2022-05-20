@@ -18,7 +18,9 @@ export class UserService {
         delay(1000)
       );
   }
+}
 
+export class UserLoginSys {
   loginEmail = localStorage.getItem('email');
   loginPassword = localStorage.getItem('password');
 
@@ -41,5 +43,4 @@ export class UserService {
       this.router.navigate(['login']);
     }
   }
-
 }

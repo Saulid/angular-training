@@ -4,19 +4,19 @@ import { Observable } from 'rxjs';
 import { map, take } from 'rxjs/operators'
 
 //services
-import { UserService } from '../services/user.service';
+import { UserLoginSys } from '../services/user.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserGuard implements CanActivate {
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userLoginSys: UserLoginSys, private router: Router) { }
 
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return this.userService.isLoggedIn.pipe(
+    return this.userLoginSys.isLoggedIn.pipe(
       take(1),
       map((isLoggedIn: boolean) => {
         if (!isLoggedIn) {

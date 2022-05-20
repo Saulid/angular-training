@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { UserService } from '../services/user.service';
+import { UserLoginSys } from '../services/user.service';
 
 @Component({
   selector: 'app-assignment-day23',
@@ -13,7 +13,7 @@ export class AssignmentDay23Component implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private userService: UserService,
+    private userLoginSys: UserLoginSys,
   ) { }
 
   ngOnInit(): void {
@@ -30,7 +30,7 @@ export class AssignmentDay23Component implements OnInit {
   }
 
   onSubmit() {
-      this.userService.login(this.loginForm.value);
+      this.userLoginSys.login(this.loginForm.value);
   }
 
 }
