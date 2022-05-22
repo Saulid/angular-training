@@ -4,6 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 //guards
 import { UserGuard } from './guards/user.guard';
 
+//resolver
+import { PostResolver } from './resolver/post.resolver';
+
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { DayFourComponent } from './day-four/day-four.component';
 import { DayFiveComponent } from './day-five/day-five.component';
@@ -23,11 +26,13 @@ import { AssignmentDay20Component } from './assignment-day20/assignment-day20.co
 import { AssignmentDay22Component } from './assignment-day22/assignment-day22.component';
 import { AssignmentDay23Component } from './assignment-day23/assignment-day23.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AssignmentDay24Component } from './assignment-day24/assignment-day24.component';
+import { PostControlComponent } from './post-control/post-control.component';
 
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'day12', pathMatch: 'full' },
+  { path: '', redirectTo: 'day24', pathMatch: 'full' },
   { path: 'user-details', component: UserDetailsComponent },
   { path: 'day-four', component: DayFourComponent },
   { path: 'day-five', component: DayFiveComponent },
@@ -46,6 +51,19 @@ const routes: Routes = [
   { path: 'day20', component: AssignmentDay20Component, canActivate: [UserGuard] },
   { path: 'day22/:id', component: AssignmentDay22Component, canActivate: [UserGuard] },
   { path: 'login', component: AssignmentDay23Component },
+  {
+    path: 'day24',
+    component: AssignmentDay24Component
+  },
+  {
+    path: 'post',
+    component: PostControlComponent,
+  },
+  {
+    path: 'post/:id',
+    component: PostControlComponent,
+    resolve: { user: PostResolver }
+  },
   { path: '**', component: PageNotFoundComponent },
 
 ];

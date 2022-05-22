@@ -33,6 +33,9 @@ import { AssignmentDay20Component } from './assignment-day20/assignment-day20.co
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AssignmentDay22Component } from './assignment-day22/assignment-day22.component';
 import { AssignmentDay23Component } from './assignment-day23/assignment-day23.component';
+import { AssignmentDay24Component } from './assignment-day24/assignment-day24.component';
+import { PostControlComponent } from './post-control/post-control.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,9 @@ import { AssignmentDay23Component } from './assignment-day23/assignment-day23.co
     AssignmentDay20Component,
     PageNotFoundComponent,
     AssignmentDay22Component,
-    AssignmentDay23Component
+    AssignmentDay23Component,
+    AssignmentDay24Component,
+    PostControlComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,6 +71,7 @@ import { AssignmentDay23Component } from './assignment-day23/assignment-day23.co
     BrowserAnimationsModule,
     NgMaterialModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [
     UserService,
