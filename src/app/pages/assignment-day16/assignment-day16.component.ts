@@ -1,8 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { Employee } from '../interfaces/user.interface';
-
+import { Employee } from "src/app/interfaces/user.interface";
 @Component({
   selector: 'app-assignment-day16',
   templateUrl: './assignment-day16.component.html',

@@ -12,30 +12,31 @@ import { Custompipe1Pipe } from './pipes/custompipe1.pipe';
 
 // pages
 import { AppComponent } from './app.component';
-import { DayFiveComponent } from './day-five/day-five.component';
-import { DayFourComponent } from './day-four/day-four.component';
-import { DaySevenComponent } from './day-seven/day-seven.component';
-import { DaySixComponent } from './day-six/day-six.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
-import { UserRegistrationComponent } from './day8/user-registration/user-registration.component';
-import { UserListComponent } from './day8/user-list/user-list.component';
-import { Day10Component } from './day10/day10.component';
+import { DayFiveComponent } from './pages/day-five/day-five.component';
+import { DayFourComponent } from './pages/day-four/day-four.component';
+import { DaySevenComponent } from './pages/day-seven/day-seven.component';
+import { DaySixComponent } from './pages/day-six/day-six.component';
+import { UserDetailsComponent } from './pages/user-details/user-details.component';
+import { UserRegistrationComponent } from './pages/day8/user-registration/user-registration.component';
+import { UserListComponent } from './pages/day8/user-list/user-list.component';
+import { Day10Component } from './pages/day10/day10.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgMaterialModule } from './ng-material/ng-material.module';
-import { AssignmentDay12Component } from './assignment-day12/assignment-day12.component';
-import { AssignmentDay11Component } from './assignment-day11/assignment-day11.component';
-import { AssignmentDay14Component } from './assignment-day14/assignment-day14.component';
-import { AssignmentDay15Component } from './assignment-day15/assignment-day15.component';
-import { AssignmentDay16Component } from './assignment-day16/assignment-day16.component';
-import { AssignmentDay18Component } from './assignment-day18/assignment-day18.component';
-import { AssignmentDay19Component } from './assignment-day19/assignment-day19.component';
-import { AssignmentDay20Component } from './assignment-day20/assignment-day20.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AssignmentDay22Component } from './assignment-day22/assignment-day22.component';
-import { AssignmentDay23Component } from './assignment-day23/assignment-day23.component';
-import { AssignmentDay24Component } from './assignment-day24/assignment-day24.component';
-import { PostControlComponent } from './post-control/post-control.component';
+import { AssignmentDay12Component } from './pages/assignment-day12/assignment-day12.component';
+import { AssignmentDay11Component } from './pages/assignment-day11/assignment-day11.component';
+import { AssignmentDay14Component } from './pages/assignment-day14/assignment-day14.component';
+import { AssignmentDay15Component } from './pages/assignment-day15/assignment-day15.component';
+import { AssignmentDay16Component } from './pages/assignment-day16/assignment-day16.component';
+import { AssignmentDay18Component } from './pages/assignment-day18/assignment-day18.component';
+import { AssignmentDay19Component } from './pages/assignment-day19/assignment-day19.component';
+import { AssignmentDay20Component } from './pages/assignment-day20/assignment-day20.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { AssignmentDay22Component } from './pages/assignment-day22/assignment-day22.component';
+
+import { AssignmentDay24Component } from './pages/assignment-day24/assignment-day24.component';
+import { PostControlComponent } from './pages/post-control/post-control.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
 
 @NgModule({
   declarations: [

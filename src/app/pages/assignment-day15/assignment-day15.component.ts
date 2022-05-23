@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../interfaces/user.interface';
+import { User } from 'src/app/interfaces/user.interface';
 
 const USER_LIST: User[] = [
   { id: 2, name: 'Kyaw Kyaw', email: 'kaywkyaw@gmail.com', age: 24, hobby: 'swimming,reading' },
