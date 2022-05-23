@@ -37,6 +37,7 @@ import { AssignmentDay24Component } from './pages/assignment-day24/assignment-da
 import { PostControlComponent } from './pages/post-control/post-control.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
+import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { AssignmentDay23Component } from './pages/assignment-day23/assignment-da
     AssignmentDay23Component,
     AssignmentDay24Component,
     PostControlComponent,
+    AssignmentDay25Component,
   ],
   imports: [
     BrowserModule,

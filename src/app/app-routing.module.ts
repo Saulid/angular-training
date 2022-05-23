@@ -28,6 +28,7 @@ import { AssignmentDay23Component } from './pages/assignment-day23/assignment-da
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AssignmentDay24Component } from './pages/assignment-day24/assignment-day24.component';
 import { PostControlComponent } from './pages/post-control/post-control.component';
+import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
 
 
 
@@ -51,19 +52,10 @@ const routes: Routes = [
   { path: 'day20', component: AssignmentDay20Component, canActivate: [UserGuard] },
   { path: 'day22/:id', component: AssignmentDay22Component, canActivate: [UserGuard] },
   { path: 'login', component: AssignmentDay23Component },
-  {
-    path: 'day24',
-    component: AssignmentDay24Component
-  },
-  {
-    path: 'post',
-    component: PostControlComponent,
-  },
-  {
-    path: 'post/:id',
-    component: PostControlComponent,
-    resolve: { user: PostResolver }
-  },
+  { path: 'day24', component: AssignmentDay24Component },
+  { path: 'post', component: PostControlComponent, },
+  { path: 'post/:id', component: PostControlComponent, resolve: { user: PostResolver } },
+  { path: 'day25', component: AssignmentDay25Component },
   { path: '**', component: PageNotFoundComponent },
 
 ];
