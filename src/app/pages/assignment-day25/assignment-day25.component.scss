@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+
+mat-form-field {
+  position: absolute;
+  right: 2%;
+}
+
+table {
+  width: 100%;
+  margin: 8% auto;
+
+  .fixed-width {
+    width: 250px;
+  }
+}
+
+.non-data {
+  text-align: center;
+  padding: 10%;
+}
