@@ -38,6 +38,8 @@ import { PostControlComponent } from './pages/post-control/post-control.componen
 import { HttpClientModule } from '@angular/common/http';
 import { AssignmentDay23Component } from './pages/assignment-day23/assignment-day23.component';
 import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
+import { AssignmentDay26Component } from './pages/assignment-day26/assignment-day26.component';
+import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,8 @@ import { AssignmentDay25Component } from './pages/assignment-day25/assignment-da
     AssignmentDay24Component,
     PostControlComponent,
     AssignmentDay25Component,
+    AssignmentDay26Component,
+    ToDoListComponent,
   ],
   imports: [
     BrowserModule,

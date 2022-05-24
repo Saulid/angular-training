@@ -1,18 +1,18 @@
-h1 {
-  text-align: center;
-}
 
-mat-form-field {
-  position: absolute;
-  right: 2%;
-}
+.container {
+  margin-bottom: 15px;
 
-table {
-  width: 100%;
-  margin: 8% auto;
-}
+  h1 {
+    color: #196868;
+    font-weight: bold;
+    text-align: center;
+  }
 
-.non-data {
-  text-align: center;
-  padding: 10%;
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+  }
 }
