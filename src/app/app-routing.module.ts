@@ -29,11 +29,11 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { AssignmentDay24Component } from './pages/assignment-day24/assignment-day24.component';
 import { PostControlComponent } from './pages/post-control/post-control.component';
 import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
-
+import { AssignmentDay26Component } from './pages/assignment-day26/assignment-day26.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'day24', pathMatch: 'full' },
+  { path: '', redirectTo: 'day26', pathMatch: 'full' },
   { path: 'user-details', component: UserDetailsComponent },
   { path: 'day-four', component: DayFourComponent },
   { path: 'day-five', component: DayFiveComponent },
@@ -56,6 +56,7 @@ const routes: Routes = [
   { path: 'post', component: PostControlComponent, },
   { path: 'post/:id', component: PostControlComponent, resolve: { user: PostResolver } },
   { path: 'day25', component: AssignmentDay25Component },
+  { path: 'day26', component: AssignmentDay26Component },
   { path: '**', component: PageNotFoundComponent },
 
 ];

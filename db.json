@@ -1,31 +1,5 @@
 {
-  "posts": [
-    {
-      "id": 2,
-      "title": "AI",
-      "author": "USER"
-    },
-    {
-      "id": 3,
-      "title": "Type Script",
-      "author": "EI MAUNG"
-    },
-    {
-      "id": 4,
-      "title": "NodeJS",
-      "author": "TYPECODE"
-    },
-    {
-      "id": 5,
-      "title": "React",
-      "author": "SCM TESTER"
-    },
-    {
-      "id": 5,
-      "title": "NodeJS",
-      "author": "typicode"
-    }
-  ],
+  "posts": [],
   "comments": [],
   "profile": {
     "name": "typicode"
