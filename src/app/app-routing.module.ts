@@ -33,7 +33,7 @@ import { AssignmentDay26Component } from './pages/assignment-day26/assignment-da
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'day24', pathMatch: 'full' },
+  { path: '', redirectTo: 'day26', pathMatch: 'full' },
   { path: 'user-details', component: UserDetailsComponent },
   { path: 'day-four', component: DayFourComponent },
   { path: 'day-five', component: DayFiveComponent },
