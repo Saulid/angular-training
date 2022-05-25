@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 //services
 import { UserService } from './services/user.service';
@@ -40,6 +41,8 @@ import { AssignmentDay23Component } from './pages/assignment-day23/assignment-da
 import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
 import { AssignmentDay26Component } from './pages/assignment-day26/assignment-day26.component';
 import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
+import { AssignmentDay27Component } from './pages/assignment-day27/assignment-day27.component';
+
 
 @NgModule({
   declarations: [
@@ -70,6 +73,7 @@ import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
     AssignmentDay25Component,
     AssignmentDay26Component,
     ToDoListComponent,
+    AssignmentDay27Component,
   ],
   imports: [
     BrowserModule,
@@ -79,11 +83,12 @@ import { ToDoListComponent } from './pages/to-do-list/to-do-list.component';
     NgMaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
+    DragDropModule
   ],
   providers: [
     UserService,
     CustompipePipe,
-    Custompipe1Pipe
+    Custompipe1Pipe,
   ],
   bootstrap: [AppComponent]
 })

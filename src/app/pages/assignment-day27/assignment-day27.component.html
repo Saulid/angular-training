@@ -1,0 +1,51 @@
+<div class="container" cdkDropListGroup>
+  <div class="mv-container">
+    <h2>Drama List</h2>
+    <div cdkDropList [cdkDropListData]="drama" class="mv-list" (cdkDropListDropped)="drop($event)">
+      <div class="mv-box" *ngFor="let item of drama" cdkDrag>
+        <div class="mv-custom-placeholder" *cdkDragPlaceholder></div>
+        <mat-card class="mv-card">
+          <mat-card-header>
+            <mat-card-title>{{item.name}}</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>{{item.description}}</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="mv-container">
+    <h2>Horror List</h2>
+    <div cdkDropList [cdkDropListData]="horror" class="mv-list" (cdkDropListDropped)="drop($event)">
+      <div class="mv-box" *ngFor="let item of horror" cdkDrag>
+        <div class="mv-custom-placeholder" *cdkDragPlaceholder></div>
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{item.name}}</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ item.description}}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="mv-container">
+    <h2>Comedy List</h2>
+    <div cdkDropList [cdkDropListData]="comedy" class="mv-list" (cdkDropListDropped)="drop($event)">
+      <div class="mv-box" *ngFor="let item of comedy" cdkDrag>
+        <div class="mv-custom-placeholder" *cdkDragPlaceholder></div>
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>{{item.name}}</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>{{ item.description}}</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

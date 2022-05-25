@@ -30,6 +30,7 @@ import { AssignmentDay24Component } from './pages/assignment-day24/assignment-da
 import { PostControlComponent } from './pages/post-control/post-control.component';
 import { AssignmentDay25Component } from './pages/assignment-day25/assignment-day25.component';
 import { AssignmentDay26Component } from './pages/assignment-day26/assignment-day26.component';
+import { AssignmentDay27Component } from './pages/assignment-day27/assignment-day27.component';
 
 
 const routes: Routes = [
@@ -57,6 +58,7 @@ const routes: Routes = [
   { path: 'post/:id', component: PostControlComponent, resolve: { user: PostResolver } },
   { path: 'day25', component: AssignmentDay25Component },
   { path: 'day26', component: AssignmentDay26Component },
+  { path: 'day27', component: AssignmentDay27Component },
   { path: '**', component: PageNotFoundComponent },
 
 ];
